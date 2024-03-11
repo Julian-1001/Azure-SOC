@@ -16,9 +16,9 @@ In this project, I developed a small-scale honeynet within Azure and integrated 
 
 
 ## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
+![Architecture Diagram](https://github.com/Julian-1001/Azure-SOC/assets/162458677/32557f4f-8cc4-47ca-aa36-bd9ad4665f0d)
 
-The architecture of the mini honeynet in Azure consists of the following components:
+The architecture of the small honeynet in Azure consists of the following:
 
 - Virtual Network (VNet)
 - Network Security Group (NSG)
@@ -28,9 +28,9 @@ The architecture of the mini honeynet in Azure consists of the following compone
 - Azure Storage Account
 - Microsoft Sentinel
 
-For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
+In the initial "BEFORE" assessment, resources were deployed with full exposure to the internet. Virtual Machines operated under fully open Network Security Groups and built-in firewalls, and all additional resources were set up with public endpoints, essentially bypassing the use of Private Endpoints.
 
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
+In the "AFTER" evaluation, security was significantly tightened. Network Security Groups were configured to block all incoming and outgoing traffic, with the sole exception being connections from my administrative workstation. Furthermore, all resources were safeguarded through the implementation of their integrated firewalls alongside the deployment of Private Endpoints.
 
 ## Attack Maps Before Hardening / Security Controls
 ![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
