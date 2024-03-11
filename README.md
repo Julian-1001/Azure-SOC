@@ -12,7 +12,7 @@ In this project, I developed a small-scale honeynet within Azure and integrated 
 - AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
 
 ## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
+![Architecture Diagram](https://github.com/Julian-1001/Azure-SOC/assets/162458677/0ad1cdc5-6e0e-4fb4-91e5-c80a5c232381)
 
 ## Architecture After Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
